@@ -1,0 +1,60 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+body{
+	font-family:cursive;
+}
+
+.SI{
+	position:relative;
+	left: 700px;
+	top: 110pt;
+	font-size:62px;
+	text-shadow: 3px 3px 3px #000;
+}
+.LI{
+	position:relative;
+	left: 700px;
+	top: 110pt;
+	font-size:62px;
+	text-shadow: 3px 3px 3px #000;
+}
+.LO{
+	position:relative;
+	left: 700px;
+	top: 110pt;
+	font-size:62px;
+	text-shadow: 3px 3px 3px #000;
+}
+.head {
+  color: black;
+  position: relative;
+  font-size: 38pt;
+  padding: 20px;
+  margin: 10px;
+  background: #ff0030;
+  color: #fff;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 1.3em;
+  border: 2px dashed #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 0 4px #ff0030, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
+  text-shadow: -1px -1px #aa3030;
+  font-weight: normal;
+  text-align: center;
+  font-size: 2em;
+
+}

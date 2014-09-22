@@ -1,0 +1,13 @@
+<h1> Make changes to your review </h1>
+
+<%= form_for @review do |f| %>
+	Name: <%= f.text_field :name %>
+	Email <%= f.text_field :email %>
+	Rating <%= f.text_field :rating %>
+	Restaurant <%= f.text_field :restaurant %>
+
+	<%=f.submit 'Make Changes' %>
+
+	<% end %>
+
+	<%= link_to 'Back to the Homeland', reviews_path %> 

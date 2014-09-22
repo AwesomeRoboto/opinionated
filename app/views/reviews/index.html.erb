@@ -1,0 +1,19 @@
+<h1> Tell us about your experiences </h1>
+
+	
+
+
+	<% @reviews.each do |r| %>
+	  <%= r.name %> <br>
+	  <%= r.rating %> 
+	  <%= r.restaurant %> <br>
+	  <%= r.comment %> <hr> 
+
+	<% end %>
+
+	<%= link_to "Home",  new_review_path %>
+	<style>
+	body{
+	font-family: calibri light;</style>
+ 
+ 

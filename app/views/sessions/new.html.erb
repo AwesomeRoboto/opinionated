@@ -1,0 +1,45 @@
+<h1>Sign In!</h1>
+
+<div id ="Sign_up">
+<%= form_for(:session, url: sessions_path) do |f| %>
+	<%= f.label :email %> <%= f.text_field :email %>
+	<%= f.label :password %> <%= f.password_field :password %>
+</div>
+	<div id="sub"> <%= f.submit "Sign In!" %></div>
+<% end %>
+<div id="NU">
+<%= link_to "New User!", signup_path %>
+</div>
+<style>
+	#Sign_up{
+		text-align: center;
+		font-size: 25pt;
+		
+
+	}
+	#SI{
+		text-align: center;
+		rotate(-90deg);
+	}
+
+	h1{
+		text-align: center;
+		font-size: 60px;
+	}
+	#NU{
+	position: absolute;
+    height: 200px;
+    width: 400px;
+    margin: 100px 0 0 0px;
+    top: 50%;
+    left: 50%;
+	}
+	#sub{
+	position: absolute;
+    height: 200px;
+    width: 400px;
+    margin: -100px 0 0 0px;
+    top: 50%;
+    left: 50%;
+	}
+</style>

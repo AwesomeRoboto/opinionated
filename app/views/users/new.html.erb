@@ -1,0 +1,30 @@
+<h1 id="SI">Sign Up!</h1>
+
+<div class="Sign_up">
+<%= form_for @user do |f| %>
+	<div id="name"><%= f.label :name %>
+	<%= f.text_field :name %></div><br>
+
+	<div id="email"><%= f.label :email %><div class="EM">
+	<%= f.text_field :email %></div></div><br>
+
+	<div id ="password"><%= f.label :password %>
+	<%= f.text_field :password %></div>
+
+
+	<%= f.submit "Sign Me Up!" %>
+	</div>
+<% end %>
+
+<style>
+	.Sign_up{
+		text-align: center;
+		font-size: 25pt;
+		
+
+	}
+	#SI{
+		text-align: center;
+		rotate(-90deg);
+	}
+</style>

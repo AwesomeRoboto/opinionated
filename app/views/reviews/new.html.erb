@@ -1,0 +1,83 @@
+<nav>Welcome to Opinionated <div id="1" >About US</div> Contact Us Location Sign in</nav>
+<p>This place sucks
+	<br>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots<br> in a piece of classical Latin literature from 45 BC, making it over 2000 years old.<br> Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia,<br> looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum<br> passage, and going through the cites of the word in classical literature, discovered<br> the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33<br> of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero,<br> written in 45 BC. This book is a treatise on the theory of ethics, very popular<br> during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor<br> sit amet..", comes from a line in section 1.10.32.
+this place really sucks Contrary to popular<br> belief, Lorem Ipsum is not simply random text. It has roots<br> in a piece of classical Latin literature from 45 BC, making it over 2000 years old.<br> Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia,<br> looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum<br> passage, and going through the cites of the word in classical literature, discovered<br> the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33<br> of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero,<br> written in 45 BC. This book is a treatise on the theory of ethics, very popular<br> during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor<br> sit amet..", comes from a line in section 1.10.32.
+this place really sucks</p>
+
+<div id="form">
+<%= form_for @review do |f| %>
+	Name: <%= f.text_field :name %> <br><br>
+	Email <%= f.text_field :email %> <br><br>
+	Rating <%= f.text_field :rating %><br><br>
+	Restaurant <%= f.text_field :restaurant %> <br><br>
+	<div id ="C">Comment <%= f.text_area :comment %></div>
+</div>
+
+	<div id="submit"><%= f.submit  "Submit your review" %></div>
+
+	<div id="ET"><%= link_to "Edit time!", edit_review_path(f) %></div>
+
+
+	<% end %>
+
+	<div id="sub"><%= link_to "Check out others reviews", reviews_path %> </div>
+
+<button id="btn">This is a hidden message</button>
+
+<style>
+	body{
+		background-color: rgba(140, 0 , 26, 1);
+		background-image: image-url("kitchen.jpg");
+	}
+	p{
+	  color: transparent;
+      text-shadow: 0 0 5px rgba(0,0,0,5);
+      float: left;
+	}
+	#submit{
+		float:right;
+	}
+	#sub{
+		float:right;
+		padding:10px;
+		
+	}
+	#ET{
+		float: right;
+		padding:10px;
+		color:red;
+	}
+	#form{
+		float:right;padding:30px;
+	}
+	#c{
+		float: right;
+	}
+	nav{
+		float:right;
+		color: white;
+		padding: 20px;
+		background-color: navy;
+		width: 100%;
+		margin: -10px;
+		text-align: center;
+		display: inline block;
+}
+input[type=text], textarea {
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid #DDDDDD;
+}
+ 
+input[type=text]:focus, textarea:focus {
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid rgba(81, 203, 238, 1);
+}
+</style>

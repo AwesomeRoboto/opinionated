@@ -1,0 +1,9 @@
+<h1> <%= @review.name %> </h1>
+
+  <p>This review is a review for <%= @review.name %> 
+  	, <br> and I gave it a score of <%= @review.rating %>,
+  	<%= @review.restaurant %> </p>
+
+    <%= link_to "Back to the reviews!", reviews_path %>
+
+    <%= link_to "Delete your review", @review, method: :delete, data: { confirm: 'Are you sure you want to abandon all hope?'} %>
